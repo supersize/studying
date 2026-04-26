@@ -1,3 +1,4 @@
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,5 +41,17 @@ public class Main {
         myNodeList.clear();
         System.out.println("node size : " + myNodeList.size());
 
+
+        System.out.println("HashMap");
+        MyHashMap hashMap = new MyHashMap();
+        hashMap.put("01", "test1");
+        hashMap.put("02", "test2");
+        hashMap.put("03", "test3");
+
+        System.out.println("get HashMap");
+        System.out.println(hashMap.getValue("01"));
+        System.out.println(hashMap.remove("01"));
+        System.out.println(hashMap.getValue("01"));
+        System.out.println("hashmap size : " + hashMap.size());
     }
 }
