@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1cf388d-d062-47f5-9b24-9289b24a0f3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyHashSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyNodeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arrListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Child01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Parent01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyNodeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyNodeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arrListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arrListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -74,6 +78,11 @@
     "settings.editor.selected.configurable": "editor.preferences.completion",
     "settings.editor.splitter.proportion": "0.24872579",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "DockerIgnore"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -100,7 +109,7 @@
       <workItem from="1694690382486" duration="5801000" />
       <workItem from="1754808498303" duration="2000" />
       <workItem from="1776060149327" duration="9891000" />
-      <workItem from="1776906627129" duration="22379000" />
+      <workItem from="1776906627129" duration="58944000" />
     </task>
     <servers />
   </component>
@@ -111,24 +120,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Test01.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/arrListTest.java</url>
-          <line>59</line>
+          <line>63</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MyHashSet.java</url>
           <line>51</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MyNodeList.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-field">
           <url>file://$PROJECT_DIR$/src/MyHashSet.java</url>

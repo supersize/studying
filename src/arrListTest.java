@@ -1,3 +1,7 @@
+import org.w3c.dom.html.HTMLImageElement;
+
+import java.util.Objects;
+
 /**
  * packageName    : PACKAGE_NAME
  * author         : kimjaehyeong
@@ -9,7 +13,7 @@
  * 4/23/26        kimjaehyeong       created
  */
 public class arrListTest<T> {
-    // get, add, getSize, resize, checkIdx
+//    // get, add, getSize, resize, checkIdx
     private Object[] objects;
     private int size;
 
@@ -58,13 +62,25 @@ public class arrListTest<T> {
 
     // remove, set, contains, clear
 
-    public void removeIdxForSet(int idx) {
+//    public void removeIdxForSet(int idx) {
+//        checkIdxForSet(idx);
+//        for (int i = idx; i < size - 1; i++)
+//            objects[i] = objects[i + 1];
+//
+//        objects[size - 1] = null;
+//        size--;
+//    }
+
+    public T removeIdxForSet (int idx) {
         checkIdxForSet(idx);
-        for (int i = idx; i < size - 1; i++)
+        T target = (T)objects[idx];
+
+        for (int i = 0; i < size -1; i++)
             objects[i] = objects[i + 1];
 
         objects[size - 1] = null;
         size--;
+        return target;
     }
 
     public void removeIdxForSet(int idx, int size) {
@@ -105,4 +121,66 @@ public class arrListTest<T> {
 
         objects[idx] = value;
     }
+
+    // add get resize contains remove size
+
+//    private Object[] objects;
+//    private int size;
+//
+//    public arrListTest() {
+//        objects = new Objects[10];
+//        size = 0;
+//    }
+//
+//    //add
+//    public void add (T value) {
+//        if (size == objects.length ) resize();
+//
+//        objects[size++] = value;
+//    }
+//
+//    private void resize () {
+//        Object[] newObj = new Object[objects.length * 2];
+//        for (int i = 0; i < size; i++) {
+//            newObj[i] = objects[i];
+//        }
+//        objects = newObj;
+//    }
+//
+//    public T get(int idx) {
+//        validateIdx(idx);
+//
+//        return (T) objects[idx];
+//    }
+//
+//    public void validateIdx(int idx) {
+//        if(idx < 0 || idx >= size) throw new IndexOutOfBoundsException();
+//    }
+//
+//    public boolean contains (T value) {
+//        for (int i = 0; i < size; i++)
+//            if(objects[i].equals(value)) return true;
+//
+//        return false;
+//    }
+//
+//    //remove
+//    public void removeIdx (int idx) {
+//        validateIdx(idx);
+//
+//        for (int i = idx; i < size; i++) {
+//            objects[i] = objects[i + 1];
+//        }
+//
+//        size--;
+//    }
+//
+//    public void clear() {
+//        objects = new Object[10];
+//        size = 0;
+//    }
+//
+//    public int size() {
+//        return size;
+//    }
 }

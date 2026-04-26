@@ -11,42 +11,70 @@ import org.w3c.dom.html.HTMLImageElement;
  * 4/23/26        kimjaehyeong       created
  */
 public class MyNodeList<T> {
-//    private int size;
-//    private Node<T> head;
-//
-//    public void add(T value){
-//        Node<T> newNode = new Node<>(value);
-//        if(head == null) {
-//            head = newNode;
-//        }
-//        else {
-//            Node<T> currnet = head;
-//            while(currnet.next != null) {
-//                currnet = currnet.next;
-//            }
-//            currnet.next = newNode;
-//        }
-//        size++;
-//    }
+    int size;
+    Node<T> head;
 
-
-    private int size;
-    private Node<T> head;
-
+    // add, addFirst, addLast
     public void add (T value) {
         Node newNode = new Node<>(value);
         if(head == null) {
             head = newNode;
         }
         else {
-            Node current = head;
-            while(head != null) {
+            Node<T> current = head;
+            while(current.next != null)
                 current = current.next;
-            }
-
             current.next = newNode;
         }
         size++;
     }
+
+    // add
+    public void addFirst(T value) {
+        Node<T> newNode = new Node<>(value);
+        newNode.next = head;
+        head = newNode;
+        size++;
+    }
+
+    public int size(){ return size;}
+
+    public Node get(T value ) {
+        Node<T> current = head;
+        for (int i = 0; i < size; i++) {
+            if(current.value == value ) {
+                current = current.next;
+            } else { return current; }
+        }
+        return null;
+    }
+
+    public boolean remove(T value) {
+         Node<T> target = get(value);
+        if(target == null)  return false;
+
+        // remove first
+        if (head.value.equals(value)) {
+            head = head.next;
+            size--;
+        }
+
+        Node<T> prev = head;
+        while (prev.next != null) {
+            if(prev.next.value.equals(value)) {
+                prev.next = prev.next.next;
+                size--;
+            }
+            else {prev = prev.next;}
+        }
+
+        return true;
+    }
+
+    public void clear() {
+        head = null;
+        size = 0;
+    }
+
 
 }
