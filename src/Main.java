@@ -53,5 +53,25 @@ public class Main {
         System.out.println(hashMap.remove("01"));
         System.out.println(hashMap.getValue("01"));
         System.out.println("hashmap size : " + hashMap.size());
+
+        System.out.println("BinaryTree!!");
+
+        MyBinaryTree<Integer> binaryTree = new MyBinaryTree<>();
+        binaryTree.root = new MyNodeForBinary<>(1);
+        binaryTree.root.left = new MyNodeForBinary(2);
+        binaryTree.root.right = new MyNodeForBinary(3);
+        binaryTree.root.left.left = new MyNodeForBinary(4);
+        binaryTree.root.left.right = new MyNodeForBinary(5);
+        binaryTree.root.right.left = new MyNodeForBinary(6);
+        binaryTree.root.right.right = new MyNodeForBinary(7);
+
+        System.out.println("preorder");
+        binaryTree.preorder(binaryTree.root);
+        System.out.println("inorder");
+        binaryTree.inorder(binaryTree.root);
+        System.out.println("postorder");
+        binaryTree.postorder(binaryTree.root);
+        System.out.println("levelorder");
+        binaryTree.levelOrder(binaryTree.root);
     }
 }

@@ -65,5 +65,4 @@ public class MyQueue<T> {
         front = 0;
         rear = size;
     }
-
 }
