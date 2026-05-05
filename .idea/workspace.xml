@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1cf388d-d062-47f5-9b24-9289b24a0f3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyNodeForBinary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -103,7 +101,7 @@
       <workItem from="1694690382486" duration="5801000" />
       <workItem from="1754808498303" duration="2000" />
       <workItem from="1776060149327" duration="9891000" />
-      <workItem from="1776906627129" duration="93065000" />
+      <workItem from="1776906627129" duration="107045000" />
     </task>
     <servers />
   </component>

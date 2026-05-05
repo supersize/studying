@@ -73,5 +73,23 @@ public class Main {
         binaryTree.postorder(binaryTree.root);
         System.out.println("levelorder");
         binaryTree.levelOrder(binaryTree.root);
+
+
+        System.out.println("heap");
+        int heapCapacity = 5;
+        MyHeap heap = new MyHeap(heapCapacity);
+        heap.insert(5);
+        heap.insert(4);
+        heap.insert(3);
+        heap.insert(2);
+        heap.insert(1);
+//        heap.insert(2);
+//        heap.insert(3);
+//        heap.insert(4);
+//        heap.insert(5);
+//        heap.insert(0);
+
+        System.out.println("heap remove : " + heap.remove());
+        heap.printHeap();
     }
 }
